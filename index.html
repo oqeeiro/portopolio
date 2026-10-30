@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101211" />
+  <meta name="description" content="Qeeiro Abiasa Wiliana — RPL student exploring front-end development, creative interfaces, and practical digital projects." />
+  <title>Qeeiro — Creative Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="intro-screen" id="introScreen" aria-hidden="true">
+    <div class="intro-mark">Q<span>.</span></div>
+    <div class="intro-caption">A LITTLE BIT OF CODE. A LOT OF CURIOSITY.</div>
+    <div class="intro-track"><span></span></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Qeeiro, home"><span class="brand-mark">Q<span>.</span></span><span class="brand-name">QEEIRO<span> / PORTFOLIO</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#work">Work <span>01</span></a>
+        <a href="#about">About <span>02</span></a>
+        <a href="#certificates">Certificates <span>03</span></a>
+        <a href="#contact">Contact <span>04</span></a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light theme" title="Switch theme"><span class="theme-icon">☼</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> SMK RPL STUDENT <span class="eyebrow-divider">/</span> ASPIRING DEVELOPER</div>
+        <h1 id="hero-title">Curious mind.<br />Building <span class="accent-word">what’s next<span class="accent-dot">.</span></span></h1>
+        <p class="hero-lede">Hi, I’m <strong>Qeeiro Abiasa Wiliana</strong> — a student who enjoys turning ideas into useful digital experiences, one project at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-footnote"><span class="mono">BASED IN INDONESIA</span><span class="footnote-line"></span><span class="mono">LEARNING BY BUILDING</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Portrait of Qeeiro">
+        <div class="portrait-grid" aria-hidden="true"></div>
+        <div class="portrait-frame">
+          <img src="assets/qeeiro-profile.jpg" alt="Qeeiro wearing a black suit and tie against a red background" fetchpriority="high" />
+          <div class="portrait-top-label mono">PROFILE / 001</div>
+          <div class="portrait-bottom-label"><span>QEEIRO</span><span class="portrait-cross">✳</span><span>2026</span></div>
+        </div>
+        <div class="orbit-sticker" aria-hidden="true"><span>CODE</span><b>×</b><span>CREATE</span><b>×</b><span>REPEAT</span></div>
+        <div class="floating-note"><span class="note-spark">✳</span><span>Always<br />in progress.</span></div>
+      </div>
+      <div class="hero-index mono" aria-hidden="true">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of interest">
+      <div class="ticker-track">
+        <span>FRONT-END DEVELOPMENT</span><i>✳</i><span>UI THINKING</span><i>✳</i><span>WEB PROJECTS</span><i>✳</i><span>CREATIVE PROBLEM SOLVING</span><i>✳</i><span>FRONT-END DEVELOPMENT</span><i>✳</i><span>UI THINKING</span><i>✳</i><span>WEB PROJECTS</span><i>✳</i><span>CREATIVE PROBLEM SOLVING</span><i>✳</i>
+      </div>
+    </section>
+
+    <section class="section-pad container" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker mono">01 / SELECTED WORK</span><h2 id="work-title">Small builds.<br /><span class="muted-title">Big learning curves.</span></h2></div>
+        <p>Experiments, school work, and ideas I’ve explored while learning to build for the web.</p>
+      </div>
+      <div class="filter-row reveal" role="group" aria-label="Filter projects">
+        <button class="filter-chip is-active" data-project-filter="all" aria-pressed="true">All projects <span>04</span></button>
+        <button class="filter-chip" data-project-filter="web" aria-pressed="false">Web design</button>
+        <button class="filter-chip" data-project-filter="code" aria-pressed="false">Code & logic</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card project-card-large reveal" data-category="web">
+          <button class="project-open" data-project="lele" aria-label="View Lele Barokah project details">
+            <div class="project-art art-fish">
+              <div class="art-topline"><span>LELE BAROKAH</span><span>01 / WEB</span></div>
+              <div class="fish-copy"><span class="art-small-label">FRESH IDEAS. GOOD HARVEST.</span><strong>From pond<br />to table<span>.</span></strong><div class="art-pill">LOCAL FISH FARMING ↗</div></div>
+              <div class="fish-orb orb-one"></div><div class="fish-orb orb-two"></div><div class="fish-icon">〰</div>
+              <div class="art-bottomline"><span>LANDING PAGE CONCEPT</span><span>HTML / CSS / JS</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-number mono">PROJECT 01</span><h3>Lele Barokah</h3><p>A landing page concept for a catfish farming business, designed to introduce the brand clearly.</p></div><span class="circle-arrow" aria-hidden="true">↗</span></div>
+          </button>
+        </article>
+        <article class="project-card reveal" data-category="web">
+          <button class="project-open" data-project="absen" aria-label="View Absen Digital project details">
+            <div class="project-art art-attendance">
+              <div class="mini-browser"><div class="browser-dots"><i></i><i></i><i></i></div><span>ABSEN / DASHBOARD</span><b>Q</b></div>
+              <div class="attendance-shell"><div class="attendance-side"><span class="side-logo">A.</span><i></i><i></i><i></i></div><div class="attendance-main"><span class="mini-label">STUDENT ATTENDANCE</span><strong>Good morning.</strong><div class="attendance-stat-row"><span><b>28</b><small>Present</small></span><span><b>02</b><small>Absent</small></span><span><b>92%</b><small>Rate</small></span></div><div class="attendance-lines"><i></i><i></i><i></i></div></div></div>
+              <span class="art-tag">CRUD · SEARCH · LOGIN</span>
+            </div>
+            <div class="project-meta"><div><span class="project-number mono">PROJECT 02</span><h3>Absen Digital</h3><p>A student attendance system concept with admin access, search, and attendance records.</p></div><span class="circle-arrow" aria-hidden="true">↗</span></div>
+          </button>
+        </article>
+        <article class="project-card reveal" data-category="code">
+          <button class="project-open" data-project="runner" aria-label="View Q-Runner project details">
+            <div class="project-art art-runner">
+              <div class="runner-top"><span class="mono">Q-RUNNER / 002</span><span class="runner-live"><i></i> RUNNING</span></div>
+              <div class="runner-sky"><span class="runner-sun"></span><span class="cloud cloud-one"></span><span class="cloud cloud-two"></span><span class="mountain"></span></div>
+              <div class="runner-ground"></div><div class="runner-player"><i></i></div><div class="spike spike-one"></div><div class="spike spike-two"></div><div class="bird-obstacle">⌁</div>
+              <div class="runner-bottom mono"><span>AVOID / ADAPT / REPEAT</span><span>↑ SPEED ↑</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-number mono">PROJECT 03</span><h3>Q-Runner</h3><p>An obstacle-runner game idea focused on timing, varied hazards, and increasing difficulty.</p></div><span class="circle-arrow" aria-hidden="true">↗</span></div>
+          </button>
+        </article>
+        <article class="project-card reveal" data-category="code">
+          <button class="project-open" data-project="calculator" aria-label="View Python Calculator project details">
+            <div class="project-art art-calc">
+              <div class="calc-window"><div class="calc-header"><span class="mono">PY / CALCULATOR</span><span>− □ ×</span></div><div class="calc-screen"><span>RESULT</span><strong id="calcDisplay">128<span>.</span>00</strong></div><div class="calc-keys"><i>AC</i><i>±</i><i>%</i><i class="calc-op">÷</i><i>7</i><i>8</i><i>9</i><i class="calc-op">×</i><i>4</i><i>5</i><i>6</i><i class="calc-op">−</i><i>1</i><i>2</i><i>3</i><i class="calc-op">+</i><i class="calc-zero">0</i><i>.</i><i class="calc-equal">=</i></div></div>
+              <div class="calc-stamp">PY<br /><span>THON</span></div>
+            </div>
+            <div class="project-meta"><div><span class="project-number mono">PROJECT 04</span><h3>Python Calculator</h3><p>A beginner-friendly calculator project exploring arithmetic logic and desktop app basics.</p></div><span class="circle-arrow" aria-hidden="true">↗</span></div>
+          </button>
+        </article>
+      </div>
+      <p class="project-disclaimer mono reveal">NOTE / PROJECT VISUALS ARE CONCEPT PREVIEWS. DETAILS CAN BE UPDATED AS EACH BUILD PROGRESSES.</p>
+    </section>
+
+    <section class="about-section section-pad" id="about" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="about-head reveal"><span class="section-kicker mono">02 / THE PERSON BEHIND THE SCREEN</span><h2 id="about-title">Not just about<br />the <span class="lime-underline">end result.</span></h2><div class="about-monogram">Q<span>.</span></div></div>
+        <div class="about-copy reveal"><p class="about-lede">I’m a student in <strong>Software Engineering (RPL)</strong> who likes figuring out how digital things work — and how to make them easier to use.</p><p>I’m building my foundation in web development, programming logic, and interface design. I learn best by trying ideas, making mistakes, then improving the result.</p><p>This portfolio is a snapshot of that process: the things I’m learning, the projects I’ve explored, and the skills I’m working to grow.</p><div class="about-facts"><div><span class="fact-value">10</span><span class="fact-label">Certificates collected</span></div><div><span class="fact-value">04</span><span class="fact-label">Project concepts</span></div><div><span class="fact-value">∞</span><span class="fact-label">Things to learn</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section-pad container skills-section" aria-labelledby="skills-title">
+      <div class="section-heading reveal"><div><span class="section-kicker mono">A FEW TOOLS IN MY TOOLKIT</span><h2 id="skills-title">Learning out loud.</h2></div><p>These are areas I’m currently exploring through classes, experiments, and hands-on projects.</p></div>
+      <div class="skills-grid reveal">
+        <div class="skill-item"><span class="skill-icon skill-html">5</span><div><h3>HTML & CSS</h3><p>Page structure, layouts, responsive styling</p></div><span class="skill-state">PRACTICING</span></div>
+        <div class="skill-item"><span class="skill-icon skill-js">JS</span><div><h3>JavaScript</h3><p>Interactions, events, small UI features</p></div><span class="skill-state">PRACTICING</span></div>
+        <div class="skill-item"><span class="skill-icon skill-php">php</span><div><h3>PHP / Laravel</h3><p>Routes, CRUD concepts, database basics</p></div><span class="skill-state">LEARNING</span></div>
+        <div class="skill-item"><span class="skill-icon skill-py">Py</span><div><h3>Python</h3><p>Programming fundamentals and logic</p></div><span class="skill-state">LEARNING</span></div>
+        <div class="skill-item"><span class="skill-icon skill-ui">✳</span><div><h3>UI / UX</h3><p>Visual hierarchy, wireframes, usability</p></div><span class="skill-state">EXPLORING</span></div>
+        <div class="skill-item"><span class="skill-icon skill-db">DB</span><div><h3>MySQL</h3><p>Tables, records, and data relationships</p></div><span class="skill-state">LEARNING</span></div>
+      </div>
+      <div class="learning-note reveal"><span class="note-mark">✳</span><p><strong>My current mindset:</strong> keep it curious, keep it useful, and keep improving.</p><span class="mono">VERSION 1.0 → ALWAYS EVOLVING</span></div>
+    </section>
+
+    <section class="cert-section section-pad" id="certificates" aria-labelledby="cert-title">
+      <div class="container">
+        <div class="section-heading cert-heading reveal"><div><span class="section-kicker mono">03 / CONTINUOUS LEARNING</span><h2 id="cert-title">Proof of showing up.</h2></div><p>Certificates from webinars and learning sessions — including public speaking and AI in education.</p></div>
+        <div class="certificate-topline reveal"><div class="cert-count"><strong>10</strong><span>certificates<br />in the collection</span></div><div class="filter-row cert-filters" role="group" aria-label="Filter certificates"><button class="filter-chip is-active" data-cert-filter="all" aria-pressed="true">All <span>10</span></button><button class="filter-chip" data-cert-filter="speaking" aria-pressed="false">Public speaking <span>09</span></button><button class="filter-chip" data-cert-filter="tech" aria-pressed="false">AI & tech <span>01</span></button></div></div>
+        <div class="certificate-grid" id="certificateGrid">
+          <button class="certificate-card reveal" data-cert="0" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-01.jpg" alt="Certificate preview: Dari Grogi Jadi Percaya Diri" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">06 OCT 2026</span><strong>Dari Grogi Jadi Percaya Diri</strong><span class="certificate-org">Galeria Potensi Indonesia · Public Speaking</span></span></button>
+          <button class="certificate-card reveal" data-cert="1" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-02.jpg" alt="Certificate preview: Strategi Mengatasi Blank Saat Berbicara di Depan Umum" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">28 SEP 2026</span><strong>Strategi Mengatasi Blank Saat Berbicara di Depan Umum</strong><span class="certificate-org">Galeria Potensi Indonesia · Public Speaking</span></span></button>
+          <button class="certificate-card reveal" data-cert="2" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-03.jpg" alt="Certificate preview: Membangun Ketenangan dan Kepercayaan Diri" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">21 SEP 2026</span><strong>Membangun Ketenangan dan Kepercayaan Diri</strong><span class="certificate-org">Galeria Potensi Indonesia · Public Speaking</span></span></button>
+          <button class="certificate-card reveal" data-cert="3" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-04.jpg" alt="Certificate preview: Berbicara Spontan, Tetap Tenang" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">08 SEP 2026</span><strong>Berbicara Spontan: Tetap Tenang</strong><span class="certificate-org">Galeria Potensi Indonesia · Public Speaking</span></span></button>
+          <button class="certificate-card reveal" data-cert="4" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-05.jpg" alt="Certificate preview: Rahasia Bebas Blank Saat Public Speaking" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">30 AUG 2026</span><strong>Rahasia Bebas Blank Saat Public Speaking</strong><span class="certificate-org">Galeria Potensi Indonesia · Public Speaking</span></span></button>
+          <button class="certificate-card reveal" data-cert="5" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-10.jpg" alt="Certificate preview: Seni Berbicara Spontan dalam Public Speaking" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">19 AUG 2026</span><strong>Seni Berbicara Spontan dalam Public Speaking</strong><span class="certificate-org">Galeria Potensi Indonesia · Public Speaking</span></span></button>
+          <button class="certificate-card reveal" data-cert="6" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-07.jpg" alt="Certificate preview: Seni Berkomunikasi Agar Didengar, Dipahami dan Dipercaya" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">12 AUG 2026</span><strong>Seni Berkomunikasi Agar Didengar</strong><span class="certificate-org">Galeria Potensi Indonesia · Contribution</span></span></button>
+          <button class="certificate-card reveal" data-cert="7" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-08.jpg" alt="Certificate preview: Seni Berkomunikasi Agar Didengar, Dipahami dan Dipercaya" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">12 AUG 2026</span><strong>Seni Berkomunikasi Agar Dipahami</strong><span class="certificate-org">Galeria Potensi Indonesia · Public Speaking</span></span></button>
+          <button class="certificate-card reveal" data-cert="8" data-cert-category="speaking"><span class="certificate-thumb"><img src="assets/certificates/cert-06.jpg" alt="Certificate preview: Seni Merespons dengan Bijak" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">06 AUG 2026</span><strong>Seni Merespons dengan Bijak</strong><span class="certificate-org">Galeria Potensi Indonesia · Public Speaking</span></span></button>
+          <button class="certificate-card reveal" data-cert="9" data-cert-category="tech"><span class="certificate-thumb"><img src="assets/certificates/cert-09.jpg" alt="Certificate preview: AI Coding untuk Masa Depan Edukasi Digital" loading="lazy" /><span class="cert-open-icon">↗</span></span><span class="certificate-info"><span class="certificate-date mono">23 MAY 2026</span><strong>AI: Coding untuk Masa Depan Edukasi Digital</strong><span class="certificate-org">PT Talenta Prestasi Indonesia · AI & Technology</span></span></button>
+        </div>
+        <p class="cert-footnote mono">SELECT A CERTIFICATE TO VIEW IT IN FULL SIZE ↗</p>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad container" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card reveal">
+        <div class="contact-deco" aria-hidden="true">Q<span>.</span></div>
+        <div class="contact-content">
+          <span class="section-kicker mono">04 / CONTACT</span>
+          <h2 id="contact-title">Have an idea?<br /><span>Let's connect.</span></h2>
+          <p>I'm always open to learning, discussing projects, or collaborating on new opportunities. Reach out directly via GitHub, LinkedIn, or Email.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:oqeeiro@gmail.com" title="Send an email to oqeeiro">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>Email</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-outline" href="https://github.com/oqeeiro" target="_blank" rel="noopener noreferrer" title="Visit GitHub Profile">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>GitHub</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-outline" href="https://www.linkedin.com/in/qeeiro" target="_blank" rel="noopener noreferrer" title="Visit LinkedIn Profile">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v7.6h2.8v-7.6h-2.8M7.86 6.5a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26z"/></svg>
+              <span>LinkedIn</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <button class="button button-outline" id="copyIntro" type="button" title="Copy intro message">
+              <span>Copy Intro</span>
+              <span aria-hidden="true">⧉</span>
+            </button>
+          </div>
+          <p class="contact-hint mono">UPDATE YOUR EMAIL, GITHUB, AND LINKEDIN HANDLES BEFORE PUBLISHING.</p>
+        </div>
+        <div class="contact-side"><span class="side-orbit orbit-a"></span><span class="side-orbit orbit-b"></span><span class="side-q">Q<span>.</span></span><span class="contact-side-note mono">THANKS FOR STOPPING BY.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><a class="brand footer-brand" href="#top"><span class="brand-mark">Q<span>.</span></span><span class="brand-name">QEEIRO<span> / PORTFOLIO</span></span></a><span class="footer-copy mono">DESIGNED WITH CURIOSITY · BUILT WHILE LEARNING</span><a class="back-top mono" href="#top">BACK TO TOP ↑</a></footer>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="projectDialogTitle">
+    <form method="dialog"><button class="dialog-close" aria-label="Close project details">×</button></form>
+    <div class="dialog-project-art" id="dialogProjectArt"></div>
+    <div class="dialog-content"><span class="section-kicker mono" id="dialogProjectKicker">PROJECT NOTE</span><h2 id="projectDialogTitle">Project title</h2><p id="projectDialogDescription"></p><div class="dialog-tags" id="dialogProjectTags"></div><div class="dialog-note"><span>↗</span><p>This is a learning project/concept. The description can be updated as the build develops.</p></div></div>
+  </dialog>
+
+  <dialog class="certificate-dialog" id="certificateDialog" aria-labelledby="certDialogTitle">
+    <form method="dialog"><button class="dialog-close cert-dialog-close" aria-label="Close certificate">×</button></form>
+    <button class="cert-nav cert-prev" id="certPrev" aria-label="Previous certificate">←</button>
+    <div class="cert-modal-image-wrap"><img id="certDialogImage" src="" alt="Full certificate" /></div>
+    <button class="cert-nav cert-next" id="certNext" aria-label="Next certificate">→</button>
+    <div class="cert-modal-caption"><div><span class="certificate-date mono" id="certDialogDate"></span><h2 id="certDialogTitle"></h2><p id="certDialogOrg"></p></div><span class="cert-modal-count mono" id="certDialogCount">01 / 10</span></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
